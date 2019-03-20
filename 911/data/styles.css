@@ -7,8 +7,6 @@
   text-align:center;
   line-height:normal;
 }
-.box_1 {
-}
 .heading_1 {
   font-family:'Arial Normal', 'Arial';
   font-weight:bold;
@@ -52,4 +50,27 @@
 }
 .paragraph {
   text-align:left;
+}
+.line {
+}
+.flow_shape {
+}
+.image {
+}
+.button {
+}
+.primary_button {
+  color:#FFFFFF;
+}
+.table_cell {
+}
+.box_2 {
+}
+.box_1 {
+}
+.connector {
+}
+.box_3 {
+}
+.ellipse {
 }

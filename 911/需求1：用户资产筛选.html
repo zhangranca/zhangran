@@ -1,0 +1,502 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>需求1：用户资产筛选</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/需求1：用户资产筛选/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/需求1：用户资产筛选/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u0" class="ax_default paragraph">
+        <div id="u0_div" class=""></div>
+        <div id="u0_text" class="text ">
+          <p style="font-size:13px;"><span style="font-family:'PingFangSC-Medium', 'PingFang SC Medium', 'PingFang SC';font-weight:500;font-size:15px;">需求描述</span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">为用户在</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">“</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">我的</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">”</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">的资产，在</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">“</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;text-decoration:underline;">本地音乐</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;text-decoration:underline;">/</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;text-decoration:underline;">我收藏的音乐</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;text-decoration:underline;">/</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;text-decoration:underline;">最近播放</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">” </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">的列表，第一是根据使用习惯，第二是通过曲库现有标签的各维度</span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">来把用户资产分类。比如说为用户的资产打标签：</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#515151;">(排序)</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#FF6600;">1. </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#FF6600;">使用习惯</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">（最常听的，早间/午间/晚间常听，很久没听）</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#FF6600;">2. </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#FF6600;">内容类型</span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">(仅限</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">“</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">本地音乐列表</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">”</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">：歌曲，导入的音频，有声电台）</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#FF6600;">3. </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#FF6600;">音乐风格</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">（现曲库90%曲目都有覆盖“歌手/流派/”标签)此需求作为为</span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">用户资产增值的一个尝试</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;"><br></span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1" class="ax_default paragraph">
+        <div id="u1_div" class=""></div>
+        <div id="u1_text" class="text ">
+          <p><span>用户资产增加筛选条件</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u2" class="ax_default image">
+        <img id="u2_img" class="img " src="images/需求1：用户资产筛选/u2.jpg"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u3" class="ax_default image">
+        <img id="u3_img" class="img " src="images/需求1：用户资产筛选/u3.jpg"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4" class="ax_default paragraph">
+        <div id="u4_div" class=""></div>
+        <div id="u4_text" class="text ">
+          <p><span>形式1：qq音乐</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5" class="ax_default connector">
+        <img id="u5_seg0" class="img " src="images/需求1：用户资产筛选/u5_seg0.png" alt="u5_seg0"/>
+        <img id="u5_seg1" class="img " src="images/需求1：用户资产筛选/u5_seg1.png" alt="u5_seg1"/>
+        <img id="u5_seg2" class="img " src="images/需求1：用户资产筛选/u5_seg2.png" alt="u5_seg2"/>
+        <img id="u5_seg3" class="img " src="images/需求1：用户资产筛选/u5_seg3.png" alt="u5_seg3"/>
+        <div id="u5_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6" class="ax_default paragraph">
+        <div id="u6_div" class=""></div>
+        <div id="u6_text" class="text ">
+          <p><span>形式2：酷狗</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u7" class="ax_default image">
+        <img id="u7_img" class="img " src="images/需求1：用户资产筛选/u7.jpg"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u8" class="ax_default image">
+        <img id="u8_img" class="img " src="images/需求1：用户资产筛选/u8.jpg"/>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u9" class="ax_default connector">
+        <img id="u9_seg0" class="img " src="images/需求1：用户资产筛选/u9_seg0.png" alt="u9_seg0"/>
+        <img id="u9_seg1" class="img " src="images/需求1：用户资产筛选/u9_seg1.png" alt="u9_seg1"/>
+        <img id="u9_seg2" class="img " src="images/需求1：用户资产筛选/u9_seg2.png" alt="u9_seg2"/>
+        <img id="u9_seg3" class="img " src="images/需求1：用户资产筛选/u5_seg3.png" alt="u9_seg3"/>
+        <div id="u9_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u10" class="ax_default paragraph">
+        <div id="u10_div" class=""></div>
+        <div id="u10_text" class="text ">
+          <p><span>竞品分析</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u11" class="ax_default paragraph">
+        <div id="u11_div" class=""></div>
+        <div id="u11_text" class="text ">
+          <p><span style="color:#FF9900;">QQ音乐：</span><span> 只存在于&quot;我喜欢的歌曲&quot;和&quot;全部歌曲&quot;2个列表 (只存在于纯歌曲，不存在于横向tab的歌单/专辑/视频)</span></p><p><span style="color:#FF9900;">酷狗音乐：</span><span>存在于&quot;本地音乐&quot;1个列表 (包括横向tab的单曲，歌手，专辑，iPod）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u12" class="ax_default paragraph">
+        <div id="u12_div" class=""></div>
+        <div id="u12_text" class="text ">
+          <p><span style="color:#FF9900;">QQ音乐：</span><span> 只有收听过/属于某一类别的标签，并且达到5首才展示；例如：若收没有听过R&amp;B的歌曲，不展示该标签/入口</span></p><p><span style="color:#FF9900;">酷狗音乐：</span><span>所有标签都展示出来；若是组合搜索某标签没有结果时，展示&quot;无搜索结果&quot;</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u13" class="ax_default paragraph">
+        <div id="u13_div" class=""></div>
+        <div id="u13_text" class="text ">
+          <p><span style="font-family:'Arial Normal', 'Arial';color:#FF9900;">QQ</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF9900;">音乐：</span><span style="font-family:'Arial Normal', 'Arial';"> </span></p><p><span style="font-family:'Arial Normal', 'Arial';">&nbsp;&nbsp; &nbsp; a) </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">列表展示内容及顺序(每天在变)：</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 流派，听歌周榜，年代，风格，场景</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 歌手，年代，歌手，歌手，场景，场景</span></p><p><span style="font-family:'Arial Normal', 'Arial';"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">每个类型中众多歌单：每个类型展示一个、该类播放次数累计最多的歌单</span></p><p><span style="font-family:'Arial Normal', 'Arial';">&nbsp;&nbsp; &nbsp; b) </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">二级页展示内容：年代，歌手，语言</span><span style="font-family:'Arial Normal', 'Arial';">/</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">地区，流派，主题</span><span style="font-family:'Arial Normal', 'Arial';">(</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">情歌</span><span style="font-family:'Arial Normal', 'Arial';">/</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">翻唱</span><span style="font-family:'Arial Normal', 'Arial';">)</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">，场景，今天心情怎么样</span></p><p><span style="font-family:'Arial Normal', 'Arial';">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; *</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">各类型的横向列表排序逻辑暂不清楚，测试过歌曲数量和收听总量，但比较合理的应该是按播放量排序</span></p><p><span style="font-family:'Arial Normal', 'Arial';"><br></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF9900;">酷狗音乐：</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">(类似组合筛选，顺序也如下</span><span style="font-family:'Arial Normal', 'Arial';">) </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">语种，音质，年代，流派，节奏</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u14" class="ax_default paragraph">
+        <div id="u14_div" class=""></div>
+        <div id="u14_text" class="text ">
+          <p><span>展示条件</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u15" class="ax_default paragraph">
+        <div id="u15_div" class=""></div>
+        <div id="u15_text" class="text ">
+          <p><span>标签类型及顺序</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u16" class="ax_default paragraph">
+        <div id="u16_div" class=""></div>
+        <div id="u16_text" class="text ">
+          <p><span>酷我方案</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u17" class="ax_default paragraph">
+        <div id="u17_div" class=""></div>
+        <div id="u17_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#FF9900;">三大类标签及排序</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">1. </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">使用习惯（最常听的，较少听的，早上/中午/晚上最爱，很久没听）</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">2. </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">内容类型（歌曲，导入的音频，有声电台）</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">3. </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">音乐风格（现曲库90%曲目都有覆盖“歌手/流派”标签)</span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;"><br></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#FF9900;">标签展示逻辑</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;text-decoration:underline;">每个标签内容达到</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;text-decoration:underline;">5</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;text-decoration:underline;">首才展示该标签</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#FF9900;">交互</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">进入列表后，有过下滑行为后就展示标签。用户点进每一个标签后，就是</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">一个独立的歌单 (可以进行的操作为，添加到，下载，没有删除)</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#FF9900;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#FF9900;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u18" class="ax_default paragraph">
+        <div id="u18_div" class=""></div>
+        <div id="u18_text" class="text ">
+          <p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Medium', 'PingFang SC Medium', 'PingFang SC';font-weight:500;font-size:15px;">收益</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">1. </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">方便用户管理自己的资产；如果用户喜欢使用这个分类的话，让用户有更多的掌控感</span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2. 最终促进用户播歌、产生更多的资产</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u19" class="ax_default paragraph">
+        <div id="u19_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u20" class="ax_default paragraph">
+        <div id="u20_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u21" class="ax_default image">
+        <img id="u21_img" class="img " src="images/需求1：用户资产筛选/u21.png"/>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u22" class="ax_default connector">
+        <img id="u22_seg0" class="img " src="images/需求1：用户资产筛选/u22_seg0.png" alt="u22_seg0"/>
+        <img id="u22_seg1" class="img " src="images/需求1：用户资产筛选/u22_seg1.png" alt="u22_seg1"/>
+        <img id="u22_seg2" class="img " src="images/需求1：用户资产筛选/u22_seg2.png" alt="u22_seg2"/>
+        <img id="u22_seg3" class="img " src="images/需求1：用户资产筛选/u22_seg3.png" alt="u22_seg3"/>
+        <div id="u22_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u23" class="ax_default heading_2">
+        <div id="u23_div" class=""></div>
+        <div id="u23_text" class="text ">
+          <p><span style="font-family:'Arial Normal', 'Arial';">dms</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">后台</span><span style="font-family:'Arial Normal', 'Arial';">(</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">只取一级标签</span><span style="font-family:'Arial Normal', 'Arial';">)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u24" class="ax_default image">
+        <img id="u24_img" class="img " src="images/需求1：用户资产筛选/u24.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u25" class="ax_default image">
+        <img id="u25_img" class="img " src="images/需求1：用户资产筛选/u25.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u26" class="ax_default image">
+        <img id="u26_img" class="img " src="images/需求1：用户资产筛选/u26.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u27" class="ax_default image">
+        <img id="u27_img" class="img " src="images/需求1：用户资产筛选/u27.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u28" class="ax_default image">
+        <img id="u28_img" class="img " src="images/需求1：用户资产筛选/u28.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u29" class="ax_default image">
+        <img id="u29_img" class="img " src="images/需求1：用户资产筛选/u29.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u30" class="ax_default box_2">
+        <div id="u30_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u31" class="ax_default button">
+        <div id="u31_div" class=""></div>
+        <div id="u31_text" class="text ">
+          <p><span>全部</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u32" class="ax_default button">
+        <div id="u32_div" class=""></div>
+        <div id="u32_text" class="text ">
+          <p><span>有声电台</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u33" class="ax_default image">
+        <img id="u33_img" class="img " src="images/需求1：用户资产筛选/u33.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u34" class="ax_default image">
+        <img id="u34_img" class="img " src="images/需求1：用户资产筛选/u34.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u35" class="ax_default image">
+        <img id="u35_img" class="img " src="images/需求1：用户资产筛选/u35.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u36" class="ax_default image">
+        <img id="u36_img" class="img " src="images/需求1：用户资产筛选/u24.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u37" class="ax_default image">
+        <img id="u37_img" class="img " src="images/需求1：用户资产筛选/u29.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u38" class="ax_default box_2">
+        <div id="u38_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u39" class="ax_default image">
+        <img id="u39_img" class="img " src="images/需求1：用户资产筛选/u39.jpg"/>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u40" class="ax_default connector">
+        <img id="u40_seg0" class="img " src="images/需求1：用户资产筛选/u40_seg0.png" alt="u40_seg0"/>
+        <img id="u40_seg1" class="img " src="images/需求1：用户资产筛选/u40_seg1.png" alt="u40_seg1"/>
+        <img id="u40_seg2" class="img " src="images/需求1：用户资产筛选/u40_seg2.png" alt="u40_seg2"/>
+        <img id="u40_seg3" class="img " src="images/需求1：用户资产筛选/u22_seg3.png" alt="u40_seg3"/>
+        <div id="u40_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u41" class="ax_default paragraph">
+        <div id="u41_div" class=""></div>
+        <div id="u41_text" class="text ">
+          <p style="font-size:13px;"><span style="font-family:'PingFangSC-Medium', 'PingFang SC Medium', 'PingFang SC';font-weight:500;font-size:15px;color:#363636;">我的收藏列表</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#363636;">&nbsp;</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#363636;">a) </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#363636;">列表页展示标签类型：</span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#363636;">&nbsp;&nbsp; &nbsp;&nbsp; 1. 使用习惯 </span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&nbsp;&nbsp; &nbsp;&nbsp; 2. 音乐风格</span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#363636;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#363636;">b) </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#363636;">列表页展示标签数量：</span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#363636;">&nbsp;&nbsp; &nbsp;&nbsp; - 默认展示：2排，、根据手机屏大小来定 (大概7-9个top标签；支持展开)</span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#363636;">&nbsp;&nbsp; &nbsp;&nbsp; - 展开后：最多4排，根据手机屏大小来定&nbsp; (大概14-17个top标签；支持收起)</span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#363636;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#363636;">c) </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#363636;">展示内容顺序：</span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#363636;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u42" class="ax_default paragraph">
+        <div id="u42_div" class=""></div>
+        <div id="u42_text" class="text ">
+          <p><span style="color:#FF9900;">存在于以下3个列表</span></p><p><span>我的收藏/本地音乐/最近播放</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u43" class="ax_default paragraph">
+        <div id="u43_div" class=""></div>
+        <div id="u43_text" class="text ">
+          <p style="font-size:13px;"><span style="font-family:'PingFangSC-Medium', 'PingFang SC Medium', 'PingFang SC';font-weight:500;font-size:15px;color:#363636;">本地音乐/最近播放列表</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#363636;">&nbsp;</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#363636;">a) </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#363636;">列表页展示标签类型：</span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#363636;">&nbsp;&nbsp; &nbsp;&nbsp; 1. 使用习惯 </span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&nbsp;&nbsp; &nbsp;&nbsp; 2. 内容类型</span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&nbsp;&nbsp; &nbsp;&nbsp; 3. 音乐风格</span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#363636;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#363636;">b) </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#363636;">列表页展示标签数量：</span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#363636;">&nbsp;&nbsp; &nbsp;&nbsp; - 默认展示：2排，、根据手机屏大小来定 (大概7-9个top标签；支持展开)</span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#363636;">&nbsp;&nbsp; &nbsp;&nbsp; - 展开后：最多4排，根据手机屏大小来定&nbsp; (大概14-17个top标签；支持收起)</span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#363636;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#363636;">c) </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#363636;">展示内容顺序：</span></p><p style="font-size:13px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#363636;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u44" class="ax_default primary_button">
+        <div id="u44_div" class=""></div>
+        <div id="u44_text" class="text ">
+          <p><span>最近常听</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u45" class="ax_default primary_button">
+        <div id="u45_div" class=""></div>
+        <div id="u45_text" class="text ">
+          <p><span>夜晚最爱</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u46" class="ax_default primary_button">
+        <div id="u46_div" class=""></div>
+        <div id="u46_text" class="text ">
+          <p><span>歌手1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u47" class="ax_default image">
+        <img id="u47_img" class="img " src="images/需求1：用户资产筛选/u47.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u48" class="ax_default image">
+        <img id="u48_img" class="img " src="images/需求1：用户资产筛选/u47.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u49" class="ax_default paragraph">
+        <div id="u49_div" class=""></div>
+        <div id="u49_text" class="text ">
+          <p><span>埋点</span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u50" class="ax_default image">
+        <img id="u50_img" class="img " src="images/需求1：用户资产筛选/u50.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u51" class="ax_default image">
+        <img id="u51_img" class="img " src="images/需求1：用户资产筛选/u51.png"/>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u52" class="ax_default connector">
+        <img id="u52_seg0" class="img " src="images/需求1：用户资产筛选/u52_seg0.png" alt="u52_seg0"/>
+        <img id="u52_seg1" class="img " src="images/需求1：用户资产筛选/u52_seg1.png" alt="u52_seg1"/>
+        <img id="u52_seg2" class="img " src="images/需求1：用户资产筛选/u52_seg2.png" alt="u52_seg2"/>
+        <img id="u52_seg3" class="img " src="images/需求1：用户资产筛选/u22_seg3.png" alt="u52_seg3"/>
+        <div id="u52_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u53" class="ax_default heading_3">
+        <div id="u53_div" class=""></div>
+        <div id="u53_text" class="text ">
+          <p><span>最多展示2排top标签</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u54" class="ax_default heading_3">
+        <div id="u54_div" class=""></div>
+        <div id="u54_text" class="text ">
+          <p><span>最多展示4排top标签</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u55" class="ax_default button">
+        <div id="u55_div" class=""></div>
+        <div id="u55_text" class="text ">
+          <p><span>导入的音频</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u56" class="ax_default image">
+        <img id="u56_img" class="img " src="images/需求1：用户资产筛选/u29.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u57" class="ax_default box_2">
+        <div id="u57_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u58" class="ax_default button">
+        <div id="u58_div" class=""></div>
+        <div id="u58_text" class="text ">
+          <p><span>全部</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u59" class="ax_default button">
+        <div id="u59_div" class=""></div>
+        <div id="u59_text" class="text ">
+          <p><span>有声电台</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u60" class="ax_default primary_button">
+        <div id="u60_div" class=""></div>
+        <div id="u60_text" class="text ">
+          <p><span>最近常听</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u61" class="ax_default primary_button">
+        <div id="u61_div" class=""></div>
+        <div id="u61_text" class="text ">
+          <p><span>夜晚最爱</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u62" class="ax_default primary_button">
+        <div id="u62_div" class=""></div>
+        <div id="u62_text" class="text ">
+          <p><span>歌手1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u63" class="ax_default button">
+        <div id="u63_div" class=""></div>
+        <div id="u63_text" class="text ">
+          <p><span>导入的音频</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u64" class="ax_default image">
+        <img id="u64_img" class="img " src="images/需求1：用户资产筛选/u64.jpg"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u65" class="ax_default image">
+        <img id="u65_img" class="img " src="images/需求1：用户资产筛选/u65.jpg"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u66" class="ax_default paragraph">
+        <div id="u66_div" class=""></div>
+        <div id="u66_text" class="text ">
+          <p><span>标签类型及定义</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u67" class="ax_default image">
+        <img id="u67_img" class="img " src="images/需求1：用户资产筛选/u67.jpg"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u68" class="ax_default image">
+        <img id="u68_img" class="img " src="images/需求1：用户资产筛选/u68.jpg"/>
+      </div>
+    </div>
+  </body>
+</html>
